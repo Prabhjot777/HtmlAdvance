@@ -1,0 +1,47 @@
+div{
+		     border: 2px solid black;
+			 margin:10px;
+             margin-bottom:8px;
+		 }
+		 
+#with_id{
+		 
+		 background-color:red;
+		
+		 }
+		 
+.with_class{
+
+		 background-color:blue;
+		
+}
+
+div p{
+		 background-color:green;
+		 }
+
+#container_id p{ 
+		 background-color:yellow;
+		 }
+
+div div p {
+		 background-color:grey;
+		 }
+  div~ p{
+			background-color:blue;
+			text-align:center;
+			color:yellow;
+		 }
+
+
+div[ data-a="value_1"]{
+		 background-color:black;
+		 color:white;
+		}
+div[ data-a="value_2"]{
+		
+		 background-color:white;
+		 color:red;
+}
+		 
+

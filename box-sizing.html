@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-sizing</title>
+    <style>
+        body{
+           ;
+        }
+        div{
+            height: 250px;
+            width: 120px;
+            border-top: 3px black dashed;
+            border-right: 10px black dashed;
+            border-bottom: 15px red solid;
+            border-left: 3px red solid;
+            border-bottom-width: 5px;
+            padding:10px;
+            margin: 50px;
+            position: absolute;
+           
+        }
+        .other{
+            box-sizing: border-box;
+            border: 5px lightblue solid;
+            border-bottom-width: 15px;
+            height: 288px;
+            width: 153px;
+            margin:50px;
+            opacity:50%;
+            left:200px;
+          
+        }
+    
+        pre{
+            margin:0px 0px 0px -80px;
+            color:firebrick;
+            font-size:1em;
+            font-weight: 800;
+            filter:brightness(2);
+      }
+    </style>
+</head>
+<body>
+    <div>
+       <pre>
+           Lorem ipsum dolor 
+           sit amet
+           , consectetur
+            adipisicing
+           \ elit. Sed
+            nostrum eum 
+       </pre>
+    </div>
+    <div class="other">
+       <pre>
+           Lorem ipsum dolor
+            sit amet, 
+            consectetur 
+            adipisicing elit.
+             Soluta accusamus
+       </pre>
+    </div>
+</body>
+</html>

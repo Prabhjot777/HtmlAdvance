@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>relative-units</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            /* font-size: xxx-large; */
+           
+        }
+        
+        div{
+            height: 400px;
+            width: 600px;
+            border: 10px white solid;
+            padding: 50px;
+            position: absolute;
+            color: white;
+            font-size: 30px; /* change into 60px to see the changes */
+           
+        }
+        p{
+            /* font-size: smaller; */
+            font-size: 0.7em;
+        }
+        span{
+            font-size: 3.5em;
+            color: aqua;
+        }
+        em{
+            font-size:3em;
+            color:yellow;
+        }
+        @media only screen and (max-width:676px){
+    body{
+        background-color:aqua;
+        margin:0px;
+    }
+    div{
+        height:600px;
+    background-image: url(../Assests/Images/patels.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+     background-size:contain;  
+    }
+     h1{
+    position:relative;
+    z-index:3;
+    color:blue;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    font-style:normal;
+    font-size:50px;
+    text-shadow:2px 2px 4px yellow;
+}
+}
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam <span>vitae</span> pariatur? Aliquam, debitis illum provident atque a, 
+        <em>pariatur beatae</em> eos perferendis alias ullam excepturi possimus quia libero <span>accusantium</span> soluta adipisci delectus <span>deserunt</span>
+        labore rem ea?</p>
+    </div>
+</body>    
+</html>

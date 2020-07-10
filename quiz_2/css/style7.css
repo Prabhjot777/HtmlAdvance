@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding: -0.5px;
+}
+header,footer{
+    background-color: gainsboro;
+    height:100px;
+   
+}
+nav{
+     background-color: black;
+     color:aqua;
+    }
+main{
+    height: :200px;
+    display:flex;
+    height:100px;
+}
+section{
+    width:33%;
+}
+#aside1,#aside2{
+     background-color: aqua;
+    width:33%
+}
+#article1,#article2{
+     background-color: deeppink;
+    height:50%;
+}
+@media only screen and (max-width: 959px) {
+  header,footer{
+    background-color: gainsboro;
+    height:100px;
+   
+}
+nav{
+     background-color: blue;
+     color:aqua;
+    }
+ main{
+        display: flex;
+        flex-flow: column;
+        }
+#aside1{
+     background-color: aqua;
+     height:500px;
+     width:140%;
+}
+section{
+     display:flex;
+     width:33%;
+    height:100px;
+    flex-direction: column;
+    }
+#article1,#article2{
+    background-color: deeppink;
+   
+}
+#aside2{
+     background-color: aqua;
+    height:100px;
+}
+}
+
